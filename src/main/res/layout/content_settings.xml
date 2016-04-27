@@ -10,32 +10,29 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.myapplication.MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    tools:showIn="@layout/app_bar_settings">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextFilder"
-        android:id="@+id/TaskField" />
+        android:text="Напишите IP сервера"
+        android:id="@+id/IPField" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Send"
-        android:id="@+id/sender"
+        android:id="@+id/ipsender"
         android:layout_marginTop="105dp"
         android:layout_below="@+id/TaskField"
-        android:layout_alignParentEnd="true"
-        android:visibility="gone"/>
+
+        />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/answ"
-        android:layout_alignBottom="@+id/sender"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="39dp"
-        android:visibility="gone"/>
+        android:id="@+id/ipedit"
+        android:layout_below="@+id/IPField" />
 
 </RelativeLayout>
